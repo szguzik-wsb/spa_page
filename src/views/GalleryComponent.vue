@@ -5,10 +5,19 @@
     <input v-model="findInSpace"> <button @click="getDataFromNasa">Odszukaj w kosmosie</button><br>
     <p v-if="loader">Pobieram dane...</p>
     <ul>
+
       <li v-for="item in spaceArray" :key="item.data[0].nasa_id">
-        <p>{{ item.data[0].description }}</p>
+
+        <p>{{ item.data[0].title }}</p>
+
+          <template v-for="item2 in item.links">
+            <img :src="item2.href" :alt="item.data[0].title" :title="item.data[0].title">
+            <hr>
+          </template>
+
         <hr>
       </li>
+
     </ul>
   </section>
 </template>
