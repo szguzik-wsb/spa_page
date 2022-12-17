@@ -16,6 +16,7 @@
       <div class="navbar-start">
         <RouterLink to="/" class="navbar-item">Witamy</RouterLink>
         <RouterLink to="/studia-i-szkolenia" class="navbar-item">Studia i szkolenia</RouterLink>
+        <RouterLink to="/galeria" class="navbar-item">Galeria</RouterLink>
         <a class="navbar-item">
           Wspołpraca z biznesem
         </a>
@@ -52,7 +53,6 @@ export default {
   methods: {
     showMenuBurger(state) {
       this.showMobileMenu = state
-      console.log(this.showMobileMenu)
     }
   }
 }

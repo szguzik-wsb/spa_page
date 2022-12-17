@@ -8,7 +8,9 @@ import TopBarComponents from "@/components/TopBarComponents.vue";
     <TopBarComponents/>
   </div>
   <div>
+    <!--zmiana-->
     <RouterView/>
+    <!--koniec zmiany-->
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
